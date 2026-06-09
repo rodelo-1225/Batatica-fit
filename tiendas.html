@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiendas - Batatica Fit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="icon" type="image/jpeg" href="FOTOS/logo.jpeg">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><img src="FOTOS/logo-vita.jpeg" alt="Batatica Fit Logo"></div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                    <li><a href="tiendas.html" class="active">Tiendas</a></li>
+                    <li><a href="contactos.html">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" id="hamburgerBtn"><span></span><span></span><span></span></button>
+            <div class="header-actions">
+                <a href="https://wa.me/573003185984" class="btn-mayorista" target="_blank">Mayoristas</a>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Tiendas</span>
+        </div>
+    </div>
+
+    <!-- HERO PAGE -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Encuéntranos en tu Ciudad</h1>
+            <p>Disponible en las principales ciudades de Colombia. Ven y experimenta nuestros waffles saludables.</p>
+        </div>
+    </section>
+
+    <!-- MAPA Y TIENDAS -->
+    <section class="stores-section">
+        <div class="container">
+            <h2 class="section-title">Puntos de Venta</h2>
+            <p class="section-subtitle">Selecciona tu ciudad para ver las tiendas disponibles</p>
+
+            <!-- CITY TABS -->
+            <div class="city-tabs">
+                <button class="city-tab active" data-city="bogota">
+                    <i class="fas fa-map-pin"></i> Bogotá
+                </button>
+                <button class="city-tab" data-city="barranquilla">
+                    <i class="fas fa-map-pin"></i> Barranquilla
+                </button>
+                <button class="city-tab" data-city="medellin">
+                    <i class="fas fa-map-pin"></i> Medellín
+                </button>
+            </div>
+
+            <!-- BOGOTÁ -->
+            <div class="city-content active" id="bogota">
+                <div class="stores-grid">
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-la-granja.jpeg" alt="La Granja Artesana">
+                        </div>
+                        <p class="store-name">La Granja Artesana</p>
+                        <p class="store-desc">Productos naturales y artesanales. Encuentra nuestros waffles en su sección de saludables.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Centro Comercial</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Dom: 8am-8pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-map-marker-alt"></i> Ver Ubicación</a>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-fithub.png" alt="Fit Hub">
+                        </div>
+                        <p class="store-name">Fit Hub</p>
+                        <p class="store-desc">Centro de fitness con tienda. Acceso a productos para miembros y público en general.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Zona Comercial</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Sáb: 6am-10pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-globe"></i> Ir a la Web</a>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-fitmarket.jpeg" alt="Fit Market">
+                        </div>
+                        <p class="store-name">Fit Market</p>
+                        <p class="store-desc">Tienda especializada en productos fitness y nutrición saludable. Expertos disponibles.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Centro Comercial</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Dom: 9am-9pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-shopping-bag"></i> Ver Tienda</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BARRANQUILLA -->
+            <div class="city-content" id="barranquilla">
+                <div class="stores-grid">
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-fithub.png" alt="Fit Hub">
+                        </div>
+                        <p class="store-name">Fit Hub Barranquilla</p>
+                        <p class="store-desc">Centro de fitness completo con tienda de productos saludables. Ubicación estratégica.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Barranquilla Centro</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Sáb: 6am-10pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-shopping-bag"></i> Ver Tienda</a>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-senda.jpeg" alt="Senda">
+                        </div>
+                        <p class="store-name">Senda Bienestar</p>
+                        <p class="store-desc">Especializada en bienestar y nutrición. Productos naturales seleccionados con cuidado.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Área Metropolitana</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Dom: 8am-7pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-share-alt"></i> Ver Redes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MEDELLÍN -->
+            <div class="city-content" id="medellin">
+                <div class="stores-grid">
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-fithub.png" alt="Fit Hub">
+                        </div>
+                        <p class="store-name">Fit Hub Medellín</p>
+                        <p class="store-desc">Centro de fitness de última generación con tienda especializada en nutrición saludable.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Sabaneta</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Sáb: 6am-10pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-shopping-bag"></i> Ver Tienda</a>
+                    </div>
+
+                    <div class="store-card">
+                        <div class="store-logo-wrapper">
+                            <img src="logo-vita.jpeg" alt="Vita Integral">
+                        </div>
+                        <p class="store-name">Vita Integral</p>
+                        <p class="store-desc">Centro integral de salud y bienestar. Nuestros productos en sección de alimentos saludables.</p>
+                        <p class="store-location"><i class="fas fa-location-dot"></i> Laureles</p>
+                        <p class="store-hours"><i class="fas fa-clock"></i> Lun-Dom: 8am-8pm</p>
+                        <a href="#" class="btn-store"><i class="fas fa-map-marker-alt"></i> Ver Mapa</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMPRAR ONLINE -->
+    <section class="online-shopping-section">
+        <div class="container">
+            <h2 class="section-title">¿Prefieres Comprar en Línea?</h2>
+            <p class="section-subtitle">También disponible a través de nuestras plataformas de venta en línea</p>
+
+            <div class="online-platforms">
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fab fa-whatsapp"></i>
+                    </div>
+                    <h3>WhatsApp Directo</h3>
+                    <p>Contacta directamente con nuestro equipo. Realizamos entregas a domicilio en Bogotá.</p>
+                    <a href="https://wa.me/573233830880" class="btn-platform" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Ordenar por WhatsApp
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>Envío Nacional</h3>
+                    <p>Realizamos envíos a toda Colombia. Empaque seguro y rastreo de tu pedido disponible.</p>
+                    <a href="contactos.html" class="btn-platform">
+                        <i class="fas fa-paper-plane"></i> Solicitar Envío
+                    </a>
+                </div>
+
+                <div class="platform-card">
+                    <div class="platform-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Llamada Telefónica</h3>
+                    <p>Llama a nuestro equipo de ventas para realizar tu pedido y aclarar cualquier duda.</p>
+                    <a href="tel:+573003185984" class="btn-platform">
+                        <i class="fas fa-phone"></i> Llamar Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFO TIENDAS -->
+    <section class="stores-info-section">
+        <div class="container">
+            <h2 class="section-title">Información de Tiendas</h2>
+            
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3><i class="fas fa-map-marker-alt"></i> Ubicación</h3>
+                    <p>Nuestras tiendas se encuentran en ubicaciones estratégicas para tu conveniencia. Acceso fácil y estacionamiento disponible.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-tag"></i> Promociones</h3>
+                    <p>Descuentos especiales para compras en volumen. Pregunta en tienda sobre nuestras ofertas actuales.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-credit-card"></i> Métodos de Pago</h3>
+                    <p>Aceptamos efectivo, tarjeta de crédito, débito y transferencias bancarias en todas nuestras tiendas.</p>
+                </div>
+
+                <div class="info-card">
+                    <h3><i class="fas fa-headset"></i> Atención</h3>
+                    <p>Personal capacitado disponible para ayudarte a seleccionar el producto perfecto para ti.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>¿No Encuentras Tu Tienda?</h2>
+            <p>Contáctanos para solicitar información sobre nuevas ubicaciones o distribuidores</p>
+            <a href="contactos.html" class="btn-large">Ir a Contacto</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="FOTOS/logo.jpeg" alt="Logo"></div>
+                    <p>Llevando el sabor y nutrición del campo colombiano a tu mesa. Cultivado por la comunidad Zenú.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bataticafit" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/bataticafit" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/573003185984" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="tiendas.html">Tiendas</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+573003185984">+57 300 318 5984</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/573003185984" target="_blank">WhatsApp</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:Bataticafit@gmail.com">Bataticafit@gmail.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Certificaciones</h4>
+                    <div class="cert-logos">
+                        <span class="cert-tag">INVIMA</span>
+                        <span class="cert-tag">FDA</span>
+                        <span class="cert-tag">PAISANA</span>
+                        <span class="cert-tag">NEGOCIOS VERDES</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Batatica Fit - Orgullosamente Colombiano</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573003185984" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span>Chatea</span></a>
+
+    <script src="script.js"></script>
+</body>
+</html>

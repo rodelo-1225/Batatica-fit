@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Batatica Fit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+      <link rel="icon" type="image/jpeg" href="FOTOS/logo.jpeg">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="main-header">
+        <div class="container">
+            <div class="logo"><img src="FOTOS/logo-vita.jpeg" alt="Batatica Fit Logo"></div>
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="beneficios.html">Beneficios</a></li>
+                    <li><a href="tiendas.html">Tiendas</a></li>
+                    <li><a href="contactos.html" class="active">Contacto</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger-menu" id="hamburgerBtn"><span></span><span></span><span></span></button>
+            <div class="header-actions">
+                <a href="https://wa.me/573003185984" class="btn-mayorista" target="_blank">Mayoristas</a>
+                <button class="theme-toggle" id="themeToggle"><i class="fas fa-moon"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- BREADCRUMB -->
+    <div class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Inicio</a> <i class="fas fa-chevron-right"></i> <span>Contacto</span>
+        </div>
+    </div>
+
+    <!-- HERO PAGE -->
+    <section class="page-hero">
+        <div class="container">
+            <h1>Contáctanos</h1>
+            <p>Estamos aquí para responder tus preguntas y ayudarte con tus necesidades</p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact-section">
+        <div class="container contact-container">
+            <!-- FORMULARIO -->
+            <div class="contact-form-wrapper">
+                <h2>Envía tu Mensaje</h2>
+                <p class="form-subtitle">Nos encantaría saber de ti. Completa el formulario y nos contactaremos dentro de 24 horas.</p>
+
+                <form id="contact-form" class="modern-form" novalidate>
+                    <!-- NOMBRE -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre Completo *</label>
+                        <input 
+                            type="text" 
+                            id="nombre" 
+                            name="nombre" 
+                            placeholder="Tu nombre completo" 
+                            required
+                            minlength="3"
+                            maxlength="100"
+                        >
+                        <span class="error-message" id="nombreError"></span>
+                    </div>
+
+                    <!-- EMAIL -->
+                    <div class="form-group">
+                        <label for="email">Correo Electrónico *</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="tu@email.com" 
+                            required
+                        >
+                        <span class="error-message" id="emailError"></span>
+                    </div>
+
+                    <!-- TELÉFONO -->
+                    <div class="form-group">
+                        <label for="telefono">Teléfono (Opcional)</label>
+                        <input 
+                            type="tel" 
+                            id="telefono" 
+                            name="telefono" 
+                            placeholder="+57 300 123 4567"
+                        >
+                        <span class="error-message" id="telefonoError"></span>
+                    </div>
+
+                    <!-- ASUNTO -->
+                    <div class="form-group">
+                        <label for="asunto">Asunto *</label>
+                        <select id="asunto" name="asunto" required>
+                            <option value="">Selecciona un asunto...</option>
+                            <option value="consulta">Consulta General</option>
+                            <option value="compra">Información de Compra</option>
+                            <option value="distribuidor">Quiero ser Distribuidor</option>
+                            <option value="sugerencia">Sugerencia o Comentario</option>
+                            <option value="reclamo">Reclamo o Queja</option>
+                        </select>
+                        <span class="error-message" id="asuntoError"></span>
+                    </div>
+
+                    <!-- MENSAJE -->
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje *</label>
+                        <textarea 
+                            id="mensaje" 
+                            name="mensaje" 
+                            placeholder="¿En qué podemos ayudarte?" 
+                            rows="6" 
+                            required
+                            minlength="10"
+                            maxlength="1000"
+                        ></textarea>
+                        <div class="textarea-footer">
+                            <span class="char-count" id="charCount">0/1000</span>
+                        </div>
+                        <span class="error-message" id="mensajeError"></span>
+                    </div>
+
+                    <!-- CHECKBOX TÉRMINOS -->
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="terminos" name="terminos" required>
+                        <label for="terminos">He leído y acepto la <a href="#">política de privacidad</a> *</label>
+                        <span class="error-message" id="terminosError"></span>
+                    </div>
+
+                    <!-- BOTÓN ENVÍO -->
+                    <button type="submit" class="btn-submit">
+                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                    </button>
+
+                    <!-- MENSAJE DE ESTADO -->
+                    <div id="form-status" class="status-message"></div>
+                </form>
+            </div>
+
+            <!-- INFO CONTACTO -->
+            <div class="contact-info-wrapper">
+                <h2>Contáctanos Directamente</h2>
+                <p>Diferentes formas de llegar a nosotros</p>
+
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+573003185984">+57 300 318 5984</a></p>
+                            <p class="hours">Lun-Vie: 8am-6pm</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>WhatsApp</h4>
+                            <p><a href="https://wa.me/573003185984" target="_blank">+57 300 318 5984</a></p>
+                            <p class="hours">24/7 disponible</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Correo Electrónico</h4>
+                            <p><a href="mailto:Bataticafit@gmail.com">Bataticafit@gmail.com</a></p>
+                            <p class="hours">Respuesta en 24 horas</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Dirección</h4>
+                            <p>Calle 3 Carrera 2 – 219</p>
+                            <p>Mata de Caña, Sampués, Sucre</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Horarios de Atención</h4>
+                            <p>Lunes a Viernes: 8:00 AM - 6:00 PM</p>
+                            <p>Sábado: 9:00 AM - 1:00 PM</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method">
+                        <div class="method-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <div class="method-content">
+                            <h4>Síguenos en Redes</h4>
+                            <div class="social-links">
+                                <a href="https://instagram.com/bataticafit" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://facebook.com/bataticafit" target="_blank"><i class="fab fa-facebook"></i></a>
+                                <a href="https://wa.me/573003185984" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA UBICACIÓN -->
+    <section class="location-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <p class="section-subtitle">Visítanos en nuestras oficinas principales</p>
+            
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.5779450831886!2d-75.4109!3d10.2567!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e42d0b0c1f1f1f1%3A0x1f1f1f1f1f1f1f1f!2sCalle%203%20Carrera%202%2C%20Sampués!5e0!3m2!1ses!2sco!4v1234567890" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <p class="section-subtitle">Respuestas a las preguntas más comunes</p>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> ¿Cuál es el tiempo de entrega?</h4>
+                    <p>Los pedidos en Bogotá se entregan en 1-2 días hábiles. Para otras ciudades, consulta con nuestro equipo.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> ¿Qué métodos de pago aceptan?</h4>
+                    <p>Aceptamos efectivo, transferencia bancaria, tarjeta crédito/débito y pagos por WhatsApp.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> ¿Los productos son 100% naturales?</h4>
+                    <p>Sí, todos nuestros productos están hechos con ingredientes naturales sin aditivos químicos.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> ¿Hacen entregas a nivel nacional?</h4>
+                    <p>Sí, realizamos envíos a toda Colombia. Los costos varían según la ubicación.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> ¿Ofrecen descuentos por volumen?</h4>
+                    <p>Sí, contáctanos para cotizar precios mayoristas y promociones especiales.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h4><i class="fas fa-question-circle"></i> ¿Cuál es la garantía del producto?</h4>
+                    <p>100% garantizado. Si no estás satisfecho, te devolvemos tu dinero sin preguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="FOTOS/logo.jpeg" alt="Logo"></div>
+                    <p>Llevando el sabor y nutrición del campo colombiano a tu mesa. Cultivado por la comunidad Zenú.</p>
+                    <div class="social-links">
+                        <a href="https://instagram.com/bataticafit" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://facebook.com/bataticafit" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://wa.me/573003185984" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="beneficios.html">Beneficios</a></li>
+                        <li><a href="tiendas.html">Tiendas</a></li>
+                        <li><a href="contactos.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-phone"></i> <a href="tel:+573003185984">+57 300 318 5984</a></p>
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/573003185984" target="_blank">WhatsApp</a></p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:Bataticafit@gmail.com">Bataticafit@gmail.com</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4>Certificaciones</h4>
+                    <div class="cert-logos">
+                        <span class="cert-tag">INVIMA</span>
+                        <span class="cert-tag">FDA</span>
+                        <span class="cert-tag">PAISANA</span>
+                        <span class="cert-tag">NEGOCIOS VERDES</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Batatica Fit - Orgullosamente Colombiano</p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/573003185984" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i><span>Chatea</span></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
